@@ -4,26 +4,29 @@
 #define ANS 7
 
 int main() {
-    
+
     int guess = NULL;
     int count = NULL;
     int limit = 5;
-    
+
     for (;;) {
-        scanf("%d", &guess);
-         
+        printf("Enter Guess: ");
+        scanf_s("%d", &guess);
+
         switch (guess) {
-            case ANS:
-                printf("You Win!");
-                break;
-               
-            default:
-                printf("Try Again");
-                count++;
+        case ANS:
+            printf("You Win!\n");
+            return 0;
+            break;
+
+        default:
+            printf("Try Again\n");
+            count++;
+            break;
         }
-        
+
         if (count == limit) {
-               printf("You Lost!!!");
+            printf("You Lost!!!\n");
             return -1;
         }
     }
