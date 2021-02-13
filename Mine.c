@@ -10,6 +10,21 @@ int main() {
     int limit = 5;
     
     for (;;) {
-    
+        scanf("%d", &guess);
+         
+        switch (guess) {
+            case ans:
+                printf("You Win!");
+                break;
+               
+            default:
+                printf("Try Again");
+                count++;
+        }
+        
+        if (count == limit) {
+               printf("You Lost!!!");
+            return -1;
+        }
     }
 }
