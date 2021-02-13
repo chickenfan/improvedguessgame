@@ -8,4 +8,8 @@ int main() {
     int guess = NULL;
     int count = NULL;
     int limit = 5;
+    
+    for (;;) {
+    
+    }
 }
